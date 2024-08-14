@@ -18,12 +18,12 @@ app.post('/', (req, res) => {
     const email = req.body.email;
 
     if (!email) {
-        return res.status(400).send('Email is required');
+        return res.status(400).send('nimeshmakevitage@gmail.com');
     }
 
     const data = {
-        from: 'Excited User <nimeshmakevitage@gmail.com>',
-        to: 'nimeshmakevitage@gmail.com', 
+        from: "Dev@Deakin <no-reply@sandbox6664d355822c43fc9619f8e690fc4a8d.mailgun.org>",
+        to: [email],
         subject: 'Welcome email!',
         text: 'Hello subscribers\nWelcome To Daily Insider.'
     };
